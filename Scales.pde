@@ -1,6 +1,5 @@
 void setup() {
   size(800, 800);
-  background(0);
 }
 
 void scales(int x, int y) {
@@ -30,8 +29,6 @@ void scales(int x, int y) {
   noFill();
   stroke(200);
   strokeWeight(3);
-  System.out.println(mouseX);
-  System.out.println(mouseY);
   for (int c = 95; c > 0; c--) {
     stroke(c + 150);
     rect(x - 45 + c/2, y - 45 + c/2, 100 - c, 95 - c, 20);
@@ -42,7 +39,7 @@ void scales(int x, int y) {
 
 void draw() {
   int i = 0;
-  for (int y = 900; y > 0; y -= 140) {
+  for (int y = 900; y > 0; y -= 145) {
     if (i % 2 == 1) {
       for (int x = 900; x > 0; x -= 112) {
         scales(x, y);
@@ -55,4 +52,3 @@ void draw() {
     i++;
   }
 }
-
