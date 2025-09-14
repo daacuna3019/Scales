@@ -1,7 +1,6 @@
 void setup() {
   size(800, 800);
   background(0);
-  noLoop();
 }
 
 void scales(int x, int y) {
@@ -56,3 +55,4 @@ void draw() {
     i++;
   }
 }
+
